@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.countdown .img-main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.click-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 8px;
+    font-size: 16px;
+}
+
+.countdown-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 5em;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    text-shadow: 0 0 10px #03f490, 0 0 10px #03f490, 0 0 20px #03f490, 0 0 40px #03f490,0 0 80px #03f490, 0 0 160px #03f490;
+}
+
+.text-content {
+    display: flex;
+    padding-bottom: 15px;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    display: none;
+}
+
+.eng-text-content {
+    display: flex;
+    padding-top: 1px;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    display: none;
+}
+
+h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    transform: scale(0);
+    animation: animate 1s linear forwards;
+    animation-delay: 5s;
+    /* text-shadow: 0 0 10px #03f490, 0 0 10px #03f490, 0 0 20px #03f490, 0 0 40px #03f490,0 0 80px #03f490, 0 0 160px #03f490; */
+}
+
+.jp-text {
+    display: flex;
+}
+.eng-text {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.eng-text span {
+    margin: 0 4px 0 4px;
+}
+
+@keyframes animate {
+    0%{
+        transform: scale(0);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+h1 span {
+    animation: colorChange 2s linear infinite;
+}
+
+
+@keyframes colorChange {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    h1 span {
+        font-size: 24px;
+        font-weight: 600;
+    }
+  }
+
+
